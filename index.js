@@ -11,3 +11,12 @@ function login(msg,error){
         console.log(msg);
     }
 }
+
+function loginHandler(username,password,clbk){
+    if(username == "ptomer40" && password == "12345"){
+        clbk("success", null);
+    }
+    else{
+        clbk(null,"username or password is incorrect");
+    }
+}
