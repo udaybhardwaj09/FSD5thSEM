@@ -70,12 +70,20 @@
 // completeOrder("0000");
 
 
-const root = document.getElementById("container");
-console.log(root);
+// const root = document.getElementById("container");
+// console.log(root);
 
-async function getData(){
-    const serverData = await fetch();
-    const jsonData = await serverData.json();
-    console.log(jsonData[0].title);
-}
-button.addEventListeners("click",getData);
+// async function getData(){
+//     const serverData = await fetch();
+//     const jsonData = await serverData.json();
+//     console.log(jsonData[0].title);
+// }
+// button.addEventListeners("click",getData);
+
+
+const container = document.getElementById('root');
+console.log(container);
+const root=ReactDOM.createRoot(container);
+const h2 = React.createElement('h2',{style:{color:'red'}}, 'Welcome to React');
+const h1 = React.createElement('h1', {style:{color:'brown',backgroundColor:'white'}},"ABES Engineering College");
+// const img = React.
