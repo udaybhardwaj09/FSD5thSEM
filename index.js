@@ -82,7 +82,7 @@
 
 
 const container = document.getElementById('root');
-console.log(container);
+console.log(container);  
 const root=ReactDOM.createRoot(container);
 const h2 = React.createElement('h2',{style:{color:'red'}}, 'Welcome to React');
 const h1 = React.createElement('h1', {style:{color:'brown',backgroundColor:'white'}},"ABES Engineering College");
